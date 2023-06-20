@@ -49,119 +49,70 @@ textarea {
 </style>
  <script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="incomplete" color="red"></tw-tag>
 
- <tw-passagedata pid="1" name="Untitled Passage" tags="street" position="75,1325" size="100,100">Welcome, brave remedy-seeker. Today marks the start of your ''extraordinary journey''.
+ <tw-passagedata pid="1" name="Untitled Passage" tags="street" position="75,1325" size="100,100">Welcome, brave remedy-seeker! Please note, that this quest takes up to 5 minutes
   &nbsp;
-  Freshly graduated from the esteemed ''Academy of Alchemy'', an unexpected path has been laid before you by destiny itself.
-  &nbsp;
-
-  [[Continue (1/3)-&gt;Start2]]
+  [[Start-&gt;Start]]
   (set:$ingredientName to &#39;X&#39;)
  </tw-passagedata>
 
- <tw-passagedata pid="2" name="Start2" tags="street" position="75,1450" size="100,100">While deeply immersed in your studies, ''tragedy struck''.
+ <tw-passagedata pid="2" name="Start" tags="street" position="75,1325" size="100,100">''You are an alchemist'', freshly graduated from the esteemed Academy of Alchemy.
   &nbsp;
-  A cruel plague claimed the lives of your beloved family, your mother and younger brother. Their loss has left you without a home to return to.
+  While deeply immersed in your studies, а cruel ''plague'' took the lives of your mother and younger brother. Their loss has left you ''without a home to return to''.
   &nbsp;
-  With a heavy heart, you find yourself stepping into the ''great unknown''.
+  ''Your mission is to craft a potion to cure the dreadful plague''.
   &nbsp;
-
-  [[Continue (2/3)-&gt;Start3]]
+  Deprived of your home, you are hitting the road…
+  &nbsp;
+  [[Go-&gt;EnterName]]
+  (set:$ingredientName to &#39;X&#39;)
  </tw-passagedata>
 
- <tw-passagedata pid="3" name="Start3" tags="street" position="75,1575" size="100,100">Driven by a passion that burns brighter than any alchemist&#39;s fire, you are resolved to defy fate.
-  &#39;&#39;Your mission&#39;&#39; extends beyond personal; it&#39;s a beacon of hope for all.
-  &nbsp;
-  You are determined to &#39;&#39;craft a potion to cure the dreadful plague&#39;&#39; that has caused so much suffering.
-  &nbsp;
-  Embrace your journey, noble alchemist. The fate of the realm is closely tied to yours.
-  &nbsp;
-  ''Let the Alchemist&#39;s Quest begin.''
-  &nbsp;
-
-  [[Continue (3/3)-&gt;EnterName]]
-
- </tw-passagedata>
-
- <tw-passagedata pid="4" name="EnterName" tags="street" position="75,1700" size="100,100">Enter your player name
+ <tw-passagedata pid="3" name="EnterName" tags="street" position="75,1700" size="100,100">Enter your player name
   (input-box:2bind $playerName,&quot;XXXXX=====&quot;,1,&quot;Persivald&quot;)
   [[Continue-&gt;EnterHouse]]
  </tw-passagedata>
 
- <tw-passagedata pid="5" name="EnterHouse" tags="street" position="75,1825" size="100,100">After countless moonlit nights, $playerName, your path leads you to the outskirts of a bustling trading town, where the town&#39;s life-force is a ''vibrant market'' at its very center.
+ <tw-passagedata pid="4" name="EnterHouse" tags="street" position="75,1825" size="100,100">After countless moonlit nights, $playerName, your path leads you to the outskirts of a ''trading town''.
   &nbsp;
-  On the edge of this lively settlement, ''An Old House'' stands.
-  It has been weathered more by time than by human touch.
-  Its façade, covered with overgrown greenery, whispers stories of its long-gone residents.
+  On the edge of this lively settlement, ''an old house'' stands.
+  Its facade, covered with overgrown greenery, whispers stories of its long-gone residents.
   &nbsp;
-  But for you, it could mark the start of a new chapter.
-  This is where your true quest begins.
-  &#39;&#39;Welcome home, alchemist.&#39;&#39;
+  And after exhausting journey, this house could serve as ''your shelter''.
   &nbsp;
   [[Enter the house-&gt;HouseStory1]]
 
  </tw-passagedata>
 
- <tw-passagedata pid="6" name="HouseStory1" tags="street" position="200,1825" size="100,100">''The house'' stands before you, its untouched interior hidden beneath a blanket of dust and cobwebs.
+ <tw-passagedata pid="6" name="HouseStory1" tags="street" position="200,1825" size="100,100">What a luck?! In the house, you find ''a forgotten laboratory''. It's clear that the house's former resident was an alchemist, just like you. Most importantly, you spot ''ancient records''. Could they possibly ''contain notes on the plague''?..
   &nbsp;
-  An aroma of mustiness fills the air, punctuated by a telltale whiff of sulfur.
-  It&#39;s a cold, damp sanctuary, with shattered windows hinting at forgotten tales.
+  With the night fast approaching, this house promises not only a shelter, but a sanctuary for your mission.
   &nbsp;
-  Could there be a ''Cellar'', you wonder?
+  Could this place become your home?
   &nbsp;
-
-  [[Enter the Cellar-&gt;HouseStory2]]
+  [[Stay in the house-&gt;HouseStory2]]
 
  </tw-passagedata>
 
- <tw-passagedata pid="7" name="HouseStory2" tags="house" position="200,1700" size="100,100">Luck is on your side, alchemist!
-  Concealed beneath the house, you find a ''Forgotten Laboratory''.
+ <tw-passagedata pid="9" name="HouseStory2" tags="house" position="200,1450" size="100,100">&#39;&#39;Next day&#39;&#39;
   &nbsp;
-  It&#39;s clear that the house&#39;s former resident was an alchemist, just like you.
-  Neglected books lay scattered around, an unclaimed treasure trove.
+  In small towns like this one, rumors spread like wildfire.
+  The ''locals look at you''r new dwelling, the previously abandoned house, ''with a'' mix of ''curiosity and caution.''
   &nbsp;
-  Most importantly, you spot ''Ancient Records''. Could they possibly contain notes on the plague?
+  They whisper to each other:
+  <i> A stranger? An intruder claiming an empty home? Or perhaps a wizard? Could you have brought the plague with you? </i>
   &nbsp;
-
-  [[Continue-&gt;HouseStory3]]
- </tw-passagedata>
-
- <tw-passagedata pid="8" name="HouseStory3" tags="house" position="200,1575" size="100,100">Exhausted from your journey and with the night fast approaching, this house promises more than just shelter from the looming storm.
+  In the meantime, the shadow of the ''plague creeps even dangerously closer''  to the borders of your newfound town.
   &nbsp;
-  It offers a sanctuary for your mission. You find yourself wondering, could this place become ''your home?''
-  &nbsp;
-  [[Stay in the House-&gt;HouseStory4]]
- </tw-passagedata>
-
- <tw-passagedata pid="9" name="HouseStory4" tags="house" position="200,1450" size="100,100">&#39;&#39;Next day&#39;&#39;
-  &nbsp;
-  In small towns like this one, ''rumors spread like wildfire.''
-  The locals look at your new dwelling, the previously abandoned house, with a mix of curiosity and caution.
-  &nbsp;
-  They murmur amongst themselves:
-  <i> A stranger? An intruder claiming an empty home? Or perhaps a wizard?</i>
-  &nbsp;
-  Your city roots, marked by the scars of the plague, only add to their suspicion. Could you have brought ''the curse'' with you? Their guarded looks say it all.
-  &nbsp;
-
-  [[Continue (1/2)-&gt;HouseStory5]]
- </tw-passagedata>
-
- <tw-passagedata pid="10" name="HouseStory5" tags="house" position="200,1325" size="100,100">The shadow of the ''plague creeps'' even closer, a threatening wave spreading across the Kingdom.
-  &nbsp;
-  And it&#39;s now dangerously close to the borders of your ''Newfound Town''.
-  &nbsp;
-
-  [[Continue (2/2)-&gt;HouseStartChoice]]
+  [[Continue-&gt;HouseStartChoice]]
  </tw-passagedata>
 
  <tw-passagedata pid="11" name="HouseStartChoice" tags="house" position="325,1575" size="100,100">
   {
   (set:$interactedWithBoy1 to false)
   (set:$helpedBeggar1 to false)
-  After a night of restful sleep and a simple meal made up of the last of your biscuits, you find yourself in quiet contemplation.
+  After a rest and meal, you ponder your next move. ''What next?''
   }&nbsp;
 
-  ''What next?''
   Will you delve into the aged notes and materials discovered in the cellar, or craft a potion for sale, a necessary means of subsistence and a path to forging new local connections?
   &nbsp;
   [[Examine materials-&gt;Delve1]]
